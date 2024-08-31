@@ -27,12 +27,6 @@ Dusk.initLogic({
   update: ({ game }) => {
     // test
     physics.worldStep(60, game.world)
-    carInteractiveUpdate(
-      game.inputs.left,
-      game.inputs.right,
-      game.world,
-      game.ids
-    )
     physics.worldStep(60, game.world)
     carInteractiveUpdate(
       game.inputs.left,
