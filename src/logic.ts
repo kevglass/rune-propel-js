@@ -1,4 +1,4 @@
-import type { DuskClient } from "dusk-games-sdk/multiplayer"
+import type { RuneClient } from "rune-sdk"
 import { physics } from "propel-js"
 import {
   carInteractiveInit,
@@ -17,10 +17,10 @@ type GameActions = {
 }
 
 declare global {
-  const Dusk: DuskClient<GameState, GameActions>
+  const Rune: RuneClient<GameState, GameActions>
 }
 
-Dusk.initLogic({
+Rune.initLogic({
   minPlayers: 1,
   maxPlayers: 2,
   updatesPerSecond: 30,

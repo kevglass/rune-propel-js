@@ -1,5 +1,5 @@
 import js from "@eslint/js"
-import duskPlugin from "dusk-games-sdk/eslint.js"
+import runePlugin from "rune-sdk/eslint.js"
 import prettier from "eslint-plugin-prettier/recommended"
 import globals from "globals"
 import tseslint from "typescript-eslint"
@@ -16,7 +16,7 @@ export default [
     },
   },
   js.configs.recommended,
-  ...duskPlugin.configs.recommended,
+  ...runePlugin.configs.recommended,
   ...tseslint.configs.recommended,
   prettier,
   {

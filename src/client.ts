@@ -37,7 +37,7 @@ function render() {
 
   if (Date.now() - lastSentTime > 100) {
     if (lastSent.left !== left || lastSent.right !== right) {
-      Dusk.actions.controls({ left, right })
+      Rune.actions.controls({ left, right })
       lastSent = { left, right }
       lastSentTime = Date.now()
     }
@@ -162,7 +162,7 @@ function render() {
 }
 
 requestAnimationFrame(render)
-Dusk.initClient({
+Rune.initClient({
   onChange: ({ game }) => {
     world = game.world
     ids = game.ids
