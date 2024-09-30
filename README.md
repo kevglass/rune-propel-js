@@ -1,3 +1,3 @@
-# Dusk and Propel-JS
+# Rune and Propel-JS
 
-Simple wrapper game for Dusk that uses a [propel-js](https://github.com/kevglass/propel-js) demo in the Dusk container.
+Simple wrapper game for Rune that uses a [propel-js](https://github.com/kevglass/propel-js) demo in the Dusk container.
